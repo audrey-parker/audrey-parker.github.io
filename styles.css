@@ -234,7 +234,7 @@ a { color: inherit; }
 .about-copy { max-width: none; }
 .about-copy p { color: rgba(16,39,34,.72); }
 .about-copy .lead { margin-top: 0; color: var(--ink); font-family: var(--serif); font-size: clamp(1.65rem, 2.8vw, 2.35rem); line-height: 1.25; }
-.profile-card { align-self: start; padding: 2rem; border-top: 3px solid var(--copper); background: var(--cream); }
+.profile-card { align-self: start; margin-top: clamp(4rem, 7vw, 7rem); padding: 2rem; border-top: 3px solid var(--copper); background: var(--cream); }
 .profile-card > div + div { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
 .profile-card .label { display: block; margin-bottom: 0.55rem; color: rgba(16,39,34,.55); }
 .profile-card p { margin: 0; font-size: 0.92rem; line-height: 1.55; }
@@ -398,7 +398,7 @@ a.publication:hover { padding-inline: 1rem; color: var(--forest); }
   .scroll-cue { display: none; }
   .section-heading { grid-template-columns: 1fr; gap: .5rem; }
   .about-layout, .project-grid { grid-template-columns: 1fr; }
-  .profile-card { max-width: 520px; }
+  .profile-card { max-width: 520px; margin-top: 0; }
   .research-row { grid-template-columns: 45px 1fr; }
   .research-row-featured { grid-template-columns: 45px minmax(0, 1fr); }
   .research-image { grid-column: 2; justify-self: start; max-width: 600px; margin-top: 1rem; }
