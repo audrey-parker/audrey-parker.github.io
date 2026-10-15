@@ -217,6 +217,7 @@ a { color: inherit; }
 .section-dark { color: var(--cream); background: var(--deep); }
 .section-accent { background: var(--sage); }
 .section-warm { background: var(--cream); }
+#about { padding-inline: clamp(1.5rem, 5vw, 6rem); }
 .section-heading { display: grid; grid-template-columns: minmax(110px, .3fr) minmax(0, 1fr); gap: 2rem; margin-bottom: 4rem; }
 .section-heading h2, .contact h2 {
   max-width: 980px;
@@ -230,7 +231,7 @@ a { color: inherit; }
 .kicker { color: var(--copper); font-size: 0.9rem; }
 .section-heading-inverse .kicker { color: var(--lime); }
 
-.about-layout { display: grid; grid-template-columns: minmax(0, 1fr) 230px; gap: clamp(1.5rem, 3vw, 3rem); }
+.about-layout { display: grid; grid-template-columns: minmax(0, 1fr) 230px; gap: clamp(1rem, 2vw, 2rem); }
 .about-copy { max-width: none; }
 .about-copy p { color: rgba(16,39,34,.72); }
 .about-intro { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 4vw, 4rem); align-items: start; }
