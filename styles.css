@@ -236,7 +236,7 @@ a { color: inherit; }
 .about-intro { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 4vw, 4rem); align-items: start; }
 .about-intro > p { margin-top: 0; }
 .about-copy .lead { margin-top: 0; color: var(--ink); font-family: var(--serif); font-size: clamp(1.65rem, 2.8vw, 2.35rem); line-height: 1.25; }
-.profile-card { align-self: start; margin-top: clamp(4rem, 7vw, 7rem); padding: 2rem; border-top: 3px solid var(--copper); background: var(--cream); }
+.profile-card { align-self: start; margin-top: 24rem; padding: 2rem; border-top: 3px solid var(--copper); background: var(--cream); }
 .profile-card > div + div { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
 .profile-card .label { display: block; margin-bottom: 0.55rem; color: rgba(16,39,34,.55); }
 .profile-card p { margin: 0; font-size: 0.92rem; line-height: 1.55; }
