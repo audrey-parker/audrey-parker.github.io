@@ -239,7 +239,10 @@ a { color: inherit; }
 .profile-card > div + div { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
 .profile-card .label { display: block; margin-bottom: 0.55rem; color: rgba(16,39,34,.55); }
 .profile-card p { margin: 0; font-size: 0.92rem; line-height: 1.55; }
-.about-recognition { margin-top: clamp(3rem, 6vw, 5rem); }
+.about-recognition { margin-top: clamp(3rem, 6vw, 4.5rem); }
+.about-copy .recognition-grid { gap: 1.4rem; }
+.about-copy .recognition-item { grid-template-columns: 1fr; gap: 0.35rem; padding: 0.9rem 0; }
+.about-copy .recognition-item p { font-size: 1rem; }
 
 .research-list { border-top: 1px solid rgba(243,239,229,.2); }
 .research-row {
