@@ -231,8 +231,8 @@ a { color: inherit; }
 .section-heading-inverse .kicker { color: var(--lime); }
 #research .kicker { font-size: 0.9rem; }
 
-.about-layout { display: grid; grid-template-columns: 1.45fr .55fr; gap: clamp(3rem, 8vw, 8rem); }
-.about-copy { max-width: 760px; }
+.about-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 275px); gap: clamp(2rem, 4vw, 4rem); }
+.about-copy { max-width: none; }
 .about-copy p { color: rgba(16,39,34,.72); }
 .about-copy .lead { margin-top: 0; color: var(--ink); font-family: var(--serif); font-size: clamp(1.65rem, 2.8vw, 2.35rem); line-height: 1.25; }
 .profile-card { align-self: start; padding: 2rem; border-top: 3px solid var(--copper); background: var(--cream); }
