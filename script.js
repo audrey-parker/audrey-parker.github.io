@@ -1,9 +1,6 @@
 const header = document.querySelector("[data-header]");
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector(".site-nav");
-const year = document.querySelector("[data-year]");
-
-year.textContent = new Date().getFullYear();
 
 const updateHeader = () => {
   header.classList.toggle("scrolled", window.scrollY > 36);
