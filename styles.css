@@ -230,7 +230,7 @@ a { color: inherit; }
 .kicker { color: var(--copper); font-size: 0.9rem; }
 .section-heading-inverse .kicker { color: var(--lime); }
 
-.about-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 275px); gap: clamp(2rem, 4vw, 4rem); }
+.about-layout { display: grid; grid-template-columns: minmax(0, 1fr) 230px; gap: clamp(1.5rem, 3vw, 3rem); }
 .about-copy { max-width: none; }
 .about-copy p { color: rgba(16,39,34,.72); }
 .about-intro { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 4vw, 4rem); align-items: start; }
