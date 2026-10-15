@@ -240,9 +240,17 @@ a { color: inherit; }
 .profile-card .label { display: block; margin-bottom: 0.55rem; color: rgba(16,39,34,.55); }
 .profile-card p { margin: 0; font-size: 0.92rem; line-height: 1.55; }
 .about-recognition { margin-top: 1.75rem; }
-.about-copy .recognition-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4rem; }
+.about-copy .recognition-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 2.2rem; }
+.about-copy .recognition-block:last-child {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 1.4rem;
+}
+.about-copy .recognition-block:last-child > .label { grid-column: 1 / -1; }
 .about-copy .recognition-item { grid-template-columns: 1fr; gap: 0.35rem; padding: 0.9rem 0; }
 .about-copy .recognition-item p { font-size: 1rem; }
+.about-copy .recognition-block:last-child .recognition-item p { font-size: 1.16rem; }
 .report-link-placeholder {
   display: inline-block;
   margin-top: 0.55rem;
@@ -395,7 +403,8 @@ a.publication:hover { padding-inline: 1rem; color: var(--forest); }
   .research-row-featured { grid-template-columns: 45px minmax(0, 1fr); }
   .research-image { grid-column: 2; justify-self: start; max-width: 600px; margin-top: 1rem; }
   .recognition-grid { grid-template-columns: 1fr; gap: 2rem; }
-  .about-copy .recognition-grid { grid-template-columns: 1fr; }
+  .about-copy .recognition-grid,
+  .about-copy .recognition-block:last-child { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 620px) {
