@@ -218,7 +218,7 @@ a { color: inherit; }
 .section-accent { background: var(--sage); }
 .section-warm { background: var(--cream); }
 .section-heading { display: grid; grid-template-columns: minmax(110px, .3fr) minmax(0, 1fr); gap: 2rem; margin-bottom: 4rem; }
-.section-heading h2, .two-column-heading h2, .contact h2 {
+.section-heading h2, .contact h2 {
   max-width: 980px;
   margin: 0;
   font-family: var(--serif);
@@ -239,7 +239,7 @@ a { color: inherit; }
 .profile-card > div + div { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
 .profile-card .label { display: block; margin-bottom: 0.55rem; color: rgba(16,39,34,.55); }
 .profile-card p { margin: 0; font-size: 0.92rem; line-height: 1.55; }
-.about-beyond { margin-top: clamp(6rem, 12vw, 11rem); padding-top: clamp(4rem, 8vw, 7rem); border-top: 1px solid var(--line); }
+.about-recognition { margin-top: clamp(3rem, 6vw, 5rem); }
 
 .research-list { border-top: 1px solid rgba(243,239,229,.2); }
 .research-row {
@@ -296,8 +296,6 @@ a.publication:hover { padding-inline: 1rem; color: var(--forest); }
 .arrow { font-size: 1.3rem; }
 .status { padding: .35rem .6rem; border: 1px solid var(--line); border-radius: 999px; font-family: var(--mono); font-size: .6rem; letter-spacing: .04em; text-transform: uppercase; }
 
-.two-column-heading { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(240px, .5fr); gap: 4rem; align-items: end; margin-bottom: 5rem; }
-.two-column-heading > p { margin: 0; color: rgba(16,39,34,.65); }
 .recognition-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
 .recognition-block { border-top: 2px solid var(--ink); padding-top: 1.3rem; }
 .recognition-block > .label { color: var(--copper); }
@@ -356,7 +354,7 @@ a.publication:hover { padding-inline: 1rem; color: var(--forest); }
   .hero-content { min-height: 100svh; padding-top: 8rem; }
   .scroll-cue { display: none; }
   .section-heading { grid-template-columns: 1fr; gap: .5rem; }
-  .about-layout, .project-grid, .two-column-heading { grid-template-columns: 1fr; }
+  .about-layout, .project-grid { grid-template-columns: 1fr; }
   .profile-card { max-width: 520px; }
   .research-row { grid-template-columns: 45px 1fr; }
   .research-tag { grid-column: 2; justify-self: start; }
