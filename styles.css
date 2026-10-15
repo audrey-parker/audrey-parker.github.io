@@ -227,9 +227,9 @@ a { color: inherit; }
   letter-spacing: -0.04em;
   line-height: 0.98;
 }
-.section-heading > p:last-child { max-width: 580px; margin: 1.2rem 0 0; color: rgba(243,239,229,.68); }
 .kicker { color: var(--copper); }
 .section-heading-inverse .kicker { color: var(--lime); }
+#research .kicker { font-size: 0.9rem; }
 
 .about-layout { display: grid; grid-template-columns: 1.45fr .55fr; gap: clamp(3rem, 8vw, 8rem); }
 .about-copy { max-width: 760px; }
@@ -256,7 +256,7 @@ a { color: inherit; }
 .research-list { border-top: 1px solid rgba(243,239,229,.2); }
 .research-row {
   display: grid;
-  grid-template-columns: 70px minmax(0, 1fr) 180px;
+  grid-template-columns: 70px minmax(0, 1fr);
   gap: 2rem;
   align-items: start;
   padding: 2.5rem 0;
@@ -265,7 +265,6 @@ a { color: inherit; }
 .research-number { color: var(--lime); font-family: var(--mono); font-size: 0.72rem; }
 .research-row h3 { margin: 0 0 0.55rem; font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.7rem); font-weight: 400; line-height: 1.1; }
 .research-row p { max-width: 680px; margin: 0; color: rgba(243,239,229,.65); }
-.research-tag { justify-self: end; padding: 0.45rem 0.75rem; border: 1px solid rgba(243,239,229,.22); border-radius: 999px; font-family: var(--mono); font-size: 0.63rem; letter-spacing: .06em; text-transform: uppercase; }
 .impact-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 5rem; background: rgba(243,239,229,.2); }
 .impact-strip div { display: flex; flex-direction: column; padding: 2rem; background: var(--deep); }
 .impact-strip strong { color: var(--lime); font-family: var(--serif); font-size: clamp(2.8rem, 5vw, 5rem); font-weight: 400; line-height: 1; }
@@ -391,7 +390,6 @@ a.publication:hover { padding-inline: 1rem; color: var(--forest); }
   .about-layout, .project-grid { grid-template-columns: 1fr; }
   .profile-card { max-width: 520px; }
   .research-row { grid-template-columns: 45px 1fr; }
-  .research-tag { grid-column: 2; justify-self: start; }
   .recognition-grid { grid-template-columns: 1fr; gap: 2rem; }
   .about-copy .recognition-grid { grid-template-columns: 1fr; }
 }
@@ -402,7 +400,6 @@ a.publication:hover { padding-inline: 1rem; color: var(--forest); }
   .hero-actions, .contact-links { align-items: flex-start; flex-direction: column; }
   .impact-strip { grid-template-columns: 1fr; }
   .research-row { grid-template-columns: 1fr; gap: .8rem; }
-  .research-tag { grid-column: 1; }
   .project-card { min-height: 340px; }
   .publication { grid-template-columns: 1fr auto; gap: .6rem 1rem; }
   .publication-subsection-heading { align-items: flex-start; flex-direction: column; gap: .35rem; }
