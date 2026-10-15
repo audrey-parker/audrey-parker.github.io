@@ -236,7 +236,7 @@ a { color: inherit; }
 .about-intro > p { margin-top: 0; }
 .about-intro > p:not(.lead) { max-width: 900px; margin-top: 1.5rem; color: rgba(16,39,34,.72); }
 .about-intro .lead { color: var(--ink); font-family: var(--serif); font-size: clamp(1.65rem, 2.8vw, 2.35rem); line-height: 1.25; }
-.profile-card { grid-column: 2; grid-row: 2; align-self: start; margin-top: -1rem; padding: 2rem; border-top: 3px solid var(--copper); background: var(--cream); }
+.profile-card { grid-column: 2; grid-row: 1 / span 2; align-self: start; margin-top: 0; padding: 2rem; border-top: 3px solid var(--copper); background: var(--cream); }
 .profile-card > div + div { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
 .profile-card .label { display: block; margin-bottom: 0.55rem; color: rgba(16,39,34,.55); }
 .profile-card p { margin: 0; font-size: 0.92rem; line-height: 1.55; }
