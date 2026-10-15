@@ -227,9 +227,8 @@ a { color: inherit; }
   letter-spacing: -0.04em;
   line-height: 0.98;
 }
-.kicker { color: var(--copper); }
+.kicker { color: var(--copper); font-size: 0.9rem; }
 .section-heading-inverse .kicker { color: var(--lime); }
-#research .kicker { font-size: 0.9rem; }
 
 .about-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 275px); gap: clamp(2rem, 4vw, 4rem); }
 .about-copy { max-width: none; }
