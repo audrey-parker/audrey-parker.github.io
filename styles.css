@@ -266,18 +266,17 @@ a { color: inherit; }
 .research-list { border-top: 1px solid rgba(243,239,229,.2); }
 .research-row {
   display: grid;
-  grid-template-columns: 70px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 2rem;
   align-items: start;
   padding: 2.5rem 0;
   border-bottom: 1px solid rgba(243,239,229,.2);
 }
-.research-number { color: var(--lime); font-family: var(--mono); font-size: 1rem; }
 .research-row h3 { margin: 0 0 0.55rem; font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.7rem); font-weight: 400; line-height: 1.1; }
 .research-row p { max-width: 680px; margin: 0; color: rgba(243,239,229,.65); }
 .research-tags { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.25rem; }
 .research-tags span { padding: 0.45rem 0.75rem; border: 1px solid rgba(243,239,229,.28); border-radius: 999px; color: rgba(243,239,229,.78); font-family: var(--mono); font-size: 0.63rem; letter-spacing: 0.06em; text-transform: uppercase; }
-.research-row-featured { grid-template-columns: 70px minmax(0, 1fr) minmax(280px, .65fr); align-items: center; }
+.research-row-featured { grid-template-columns: minmax(0, 1fr) minmax(280px, .65fr); align-items: center; }
 .research-image { width: 100%; max-width: 390px; margin: 0; justify-self: end; overflow: hidden; aspect-ratio: 4 / 3; }
 .research-image img { width: 100%; height: 100%; object-fit: cover; }
 .impact-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 5rem; background: rgba(243,239,229,.2); }
@@ -402,9 +401,8 @@ a.publication:hover { padding-inline: 1rem; color: var(--forest); }
   .about-layout, .project-grid { grid-template-columns: 1fr; }
   .about-intro, .about-recognition, .profile-card { grid-column: 1; grid-row: auto; }
   .profile-card { max-width: 520px; margin-top: 0; }
-  .research-row { grid-template-columns: 45px 1fr; }
-  .research-row-featured { grid-template-columns: 45px minmax(0, 1fr); }
-  .research-image { grid-column: 2; justify-self: start; max-width: 600px; margin-top: 1rem; }
+  .research-row, .research-row-featured { grid-template-columns: 1fr; }
+  .research-image { grid-column: 1; justify-self: start; max-width: 600px; margin-top: 1rem; }
   .recognition-grid { grid-template-columns: 1fr; gap: 2rem; }
   .about-recognition .recognition-grid,
   .about-recognition .recognition-block:last-child { grid-template-columns: 1fr; }
