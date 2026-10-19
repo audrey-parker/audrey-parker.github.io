@@ -238,7 +238,7 @@ a { color: inherit; }
 .about-intro .lead { color: var(--ink); font-family: var(--serif); font-size: clamp(1.65rem, 2.8vw, 2.35rem); line-height: 1.25; }
 .sloan-feature { margin-top: 2rem; padding: clamp(1.4rem, 3vw, 2rem); border-top: 3px solid var(--copper); background: var(--cream); }
 .sloan-feature .label { margin-bottom: 0.75rem; color: var(--copper); }
-.sloan-feature h3 { max-width: 760px; margin: 0; font-family: var(--serif); font-size: clamp(1.65rem, 2.7vw, 2.35rem); font-weight: 400; line-height: 1.1; }
+.sloan-feature h3 { max-width: none; margin: 0; font-family: var(--serif); font-size: clamp(1.65rem, 2.7vw, 2.35rem); font-weight: 400; line-height: 1.1; white-space: nowrap; }
 .sloan-feature > p:not(.label) { max-width: 760px; margin: 0.8rem 0 0; color: rgba(16,39,34,.68); }
 .coursework-list { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 1.25rem; }
 .coursework-list span { padding: 0.5rem 0.7rem; border: 1px solid var(--line); border-radius: 999px; font-family: var(--mono); font-size: 0.64rem; line-height: 1.35; }
@@ -405,6 +405,7 @@ a.publication:hover { padding-inline: 1rem; color: var(--forest); }
   .about-layout, .project-grid { grid-template-columns: 1fr; }
   .about-intro, .about-recognition, .profile-card { grid-column: 1; grid-row: auto; }
   .profile-card { max-width: 520px; margin-top: 0; }
+  .sloan-feature h3 { white-space: normal; }
   .research-row, .research-row-featured { grid-template-columns: 1fr; }
   .research-image { grid-column: 1; justify-self: start; max-width: 600px; margin-top: 1rem; }
   .recognition-grid { grid-template-columns: 1fr; gap: 2rem; }
